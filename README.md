@@ -34,9 +34,9 @@
     - VISION_RADIUS 
     - VISION_MOVEMENT_PROB
 
-# ``` the whole analysis of the world depends on the variation of these above parameters```
+# ```The whole analysis of the world depends on the variation of these above parameters```
 
-## the environment is simulated in a pygame environment:
+## The environment is simulated in a pygame environment:
 * `red blocks = unhelpful`
 * `green blocks = helpful`
 * `yellow blocks = tittat`
