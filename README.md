@@ -37,3 +37,20 @@
 * `yellow blocks = tittat`
 * `blue blocks = canteens`
 <img width="748" alt="Screenshot 2023-04-03 at 10 47 39 AM" src="https://user-images.githubusercontent.com/99525836/229417701-7c58d635-0626-44f2-a86b-b042bcdae6b6.png">
+
+# Our approach
+## Movement Policy
+- we are following the Q-learning approach to decide upon the action for the movement of our macpens.
+- the rewards for our macpens are the actions that lead to it having more food, and the moment when it reproduces.
+- each of these actions are associated with certain amounts of rewards.
+- the exploration vs exploitation is also taken care of by giving it a minimum exploration probability, below which it can never go.
+- our macpen also have the VISION attribute, which helps it to see around for canteens, and the movement along with the vision is also given a certain probability so that it doesn't always follow the visual cue, but also explores around for more.
+## Interaction Policy
+- the interaction policy is decided by taking combinations of all the macpens in a grid cell, and a macpen only gives enough food to the other macpen so that it just makes it to the survival threshold, which is just more than the GHOST_VAL.
+- if the macpen if of type TITTAT, then it keeps the count of the total food it has received when it was in need and also keeps track of when it needed food and didn't get it. So, the overall sum of these is used to determine whether the titat macpen will behave helpfully or unhelpfully.
+- the helpful macpen will always donate, the unhelpful macpen will never donate as said in the question.
+
+# Some interesting results from our analysis
+* #### It is usually found that colonies are formed around the area of the canteens, because that is the area where it receives the food most accessibly, and reproduces there itself, therefore the population grows there.
+    - ##### this is just like the real world scenarios where the population tends to more near more food sources and fertile land.
+* #### It is also found that generally the colonies of unhelpful and tittat or helpful and tittat co-exist.. but the colonies of helpful and unhelpful are rarely found to co-exist, or even if they do, eventually the helpful ones die out.
