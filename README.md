@@ -1,5 +1,5 @@
 # Neuroeconomics
-### Submission by Aryans - Team 2
+### Submission by Aryans - Team 1
 * Rishav Bikarwar - 200792
 * Aditya Bangar - 210069
 * Shubham Patel - 210709
