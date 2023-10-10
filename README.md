@@ -1,4 +1,20 @@
 # Neuroeconomics
+
+## Introduction
+The world defined in the problem is a grid consisting creatures named as Mac-
+pan. They are allowed four types of movements i.e up, down, right, left. Can-
+teens exists at random places in the world to give out food necessary for Macpen
+to reproduce(1 Macpan → 2 Macpen) with food equally distributed among them.
+There exists a ghost gang which takes a certain amount of food from every-
+one and if the food level of Macpan falls below 0 they die.
+There exists 3 types of Macpen:
+1. Helpful - Which gives some amount of food to other if present in excess.
+2. Ungrateful - Doesn’t share food at all.
+3. Tit-for-tat - Will share food with the others based on their history with
+the grid community.
+In this problem, we are required to analyze the type-wise population devel-
+opment of the grid world by simulating a virtual environment in python.
+
 ### Submission by Aryans - Team 1
 * Rishav Bikarwar - 200792
 * Aditya Bangar - 210069
